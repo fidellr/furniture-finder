@@ -1,3 +1,6 @@
+## Running App
+Open [https://fidellr.github.io/furniture-finder/index.html](https://fidellr.github.io/furniture-finder/index.html) 
+
 ## Available Scripts
 
 In the project directory, you can run:
