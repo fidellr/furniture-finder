@@ -1,5 +1,5 @@
 ## Running App
-Open [https://fidellr.github.io/furniture-finder/index.html](https://fidellr.github.io/furniture-finder/index.html) 
+Open [https://furniture-finder-fidel.vercel.app/furnitures](https://furniture-finder-fidel.vercel.app/furnitures)
 
 ## Available Scripts
 
