@@ -6,7 +6,7 @@ const routes = [
   {
     name: 'Furniture List',
     exact: true,
-    path: '/furniture-finder/furnitures',
+    path: '/furnitures',
     component: React.lazy(() => import('../../pages/FurnitureList')),
   },
 ];

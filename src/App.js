@@ -20,7 +20,7 @@ function App() {
               component={route.component}
             />
           ))}
-          <Redirect to="/furniture-finder/furnitures" />
+          <Redirect to="/furnitures" />
         </Switch>
       </React.Suspense>
     </BrowserRouter>
