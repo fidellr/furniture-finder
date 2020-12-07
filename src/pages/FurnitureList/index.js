@@ -121,7 +121,7 @@ const FurnitureListPage = () => {
 
     for (let i = 0; i < data.length; i++) {
       const productName = data[i].name.toLowerCase();
-      if (productName.indexOf(searchValue) !== -1) {
+      if (productName.indexOf(searchValue.toLowerCase()) !== -1) {
         filteredData.push(data[i]);
       }
     }
