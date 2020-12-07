@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+//#region PACKAGE IMPORTS
+import React from 'react';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+//#endregion
+
+//#region CONFIG IMPORTS
+import routes from './config/routes';
+//#endregion
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <React.Suspense fallback={<span>Loading...</span>}>
+        <Switch>
+          {routes.map((route) => (
+            <Route
+              key={route.name}
+              exact={route.exact}
+              path={route.path}
+              component={route.component}
+            />
+          ))}
+          <Redirect to="/furnitures" />
+        </Switch>
+      </React.Suspense>
+    </BrowserRouter>
   );
 }
 

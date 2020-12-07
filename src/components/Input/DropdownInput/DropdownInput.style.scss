@@ -1,0 +1,24 @@
+.dropdownInputContainer {
+    width: 50%;
+    position: relative;
+    > .inputContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        background-color: #ffffff;
+        padding: 2px 5px;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+    }
+
+    > .inputContainer > .arrow {
+        background-image: url('../../../assets/icons/arrow-down.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 0.625rem;
+        height: 0.625rem;
+    }
+}

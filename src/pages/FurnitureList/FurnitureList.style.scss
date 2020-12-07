@@ -1,0 +1,26 @@
+.dropdownWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 1rem;
+    > .deliveryTimesDropdown {
+        margin-left: 1rem;
+    }
+}
+
+.cardList {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 7.5rem;
+    margin: 0 auto;
+    > .noDataMessage {
+        margin: 0 auto;
+    }
+    > .furnitureProductCard {
+        flex-basis: calc(50% - 20px);
+        margin: 0.625rem;
+        border-radius: 0.625rem;
+    }
+}

@@ -1,0 +1,12 @@
+@import "../../utils/styles/variables";
+
+.headerContainer {
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin: 0 auto;
+    padding: 1.25rem 1rem;
+    width: 100%;
+    background-color: $dark-blue;
+    z-index: 1;
+}
